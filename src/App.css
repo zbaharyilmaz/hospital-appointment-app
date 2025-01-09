@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  color: #ed5252;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+body {
+  font-family: "Arsenal", serif;
+  font-weight: 700;
+  background-color: #c7dbea;
+  background-image: linear-gradient(135deg, #c7dbea 0%, #d1e1f9 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background-image: url("https://wallpapers.com/images/hd/blank-crumpled-paper-ce2xfk1vk85mutcp-ce2xfk1vk85mutcp.webp");
+
+  margin: 3rem auto;
+  max-width: 950px;
+  padding: 2rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.header {
+  
+  margin: 1rem;
+}
+/* doktor resimleri  */
+.doctorBtn {
+  border: none;
+  cursor: pointer;
+ /* outline: none; */
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+/* ilk sayfadaki 4 doktor resmi ve isimlerinin div i*/
+.dr {
+  display: flex;
+  gap: 2rem 1rem;
+  justify-content: center;
+}
+/* 2. sayfadaki kayıt oluştur butonu */
+.kayitBtn {
+  color: #fff;
+ text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #25ad69;
+  width: 300px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #6a0707;
+  border-radius: 50px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  padding: 1rem;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*! data daki isDone kısmı false iken görünecek stil */
+.falseStyle {
+  display: flex;
+  justify-content: space-between;
+
+  background-image: url("https://img.freepik.com/free-vector/watercolor-background_220290-15.jpg?w=2000");
+
+  background-size: cover;
+  background-position: center center;
+  margin: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.falseStyle h2 {
+  color: green;
+}
+.falseStyle h3 {
+  color: #152bbb;
+}
+/*! data daki isDone kısmı true iken görünecek stil */
+.trueStil {
+  display: flex;
+  justify-content: space-between;
+  border-left: 10px solid #2037b9;
+  background-color: #5dd5f9;
+  padding: 10px 20px;
+}
+
+.trueStil h3,
+.trueStil h2 {
+  text-decoration: line-through;
+  color: blue;
+}
+.doctorBtn + h4 {
+  padding: 10px 20px;
+/* doctorBtn className li img den sonraki h4 doktor isimleri */
+  
+}
+/* 
+color: #B8C6D9; 
+color: #011526; 
+color: #023859; 
+color: #04668C; 
+color: #BF9278; */
