@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+.navbar{
+  background-image: linear-gradient(135deg, #c7dbea 0%, #d1e1f9 100%);
+}
 h1 {
   text-align: center;
   color: #ed5252;
@@ -15,7 +18,6 @@ body {
   font-family: "Arsenal", serif;
   font-weight: 700;
   background-color: #c7dbea;
-  background-image: linear-gradient(135deg, #c7dbea 0%, #d1e1f9 100%);
   background-repeat: no-repeat;
   background-size: cover;
 }

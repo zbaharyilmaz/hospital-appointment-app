@@ -1,13 +1,15 @@
 import React from "react";
 import PatientList from "../components/PatientList";
 import AddPatient from "../components/AddPatient";
+import Header from "../components/Header";
+
+
 
 const Home = () => {
   return (
     <div style={{ display: "block" }}>
       <div>
-        <header>
-          <h1>HOSPITAL</h1>
+        <Header/>
           <div className="dr">
             <div>
               <img
@@ -20,7 +22,7 @@ const Home = () => {
               <h4>{}</h4>
             </div>
           </div>
-        </header>
+
 
         <AddPatient />
       </div>

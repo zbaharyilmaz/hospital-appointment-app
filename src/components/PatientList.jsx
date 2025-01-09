@@ -1,5 +1,6 @@
 import { FaTimesCircle } from "react-icons/fa";
 
+
 const PatientList = () => {
   return (
     <div>
