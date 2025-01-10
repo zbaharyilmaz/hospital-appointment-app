@@ -1,33 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import PatientList from "../components/PatientList";
 import AddPatient from "../components/AddPatient";
 import Header from "../components/Header";
-
-
+import { appointmentData, doctorData } from "../helper/data";
+import Doctors from "../components/Doctors";
 
 const Home = () => {
+
+const [doctor, setDoctor]= useState(doctorData)
+const [patient, setPatient]= useState(appointmentData)
+
   return (
-    <div style={{ display: "block" }}>
-      <div>
+    <div>
+        <div>
         <Header/>
-          <div className="dr">
-            <div>
-              <img
-                src=""
-                width="180px"
-                height="150px"
-                className="doctorBtn"
-                alt=""
-              />
-              <h4>{}</h4>
-            </div>
-          </div>
-
-
-        <AddPatient />
+        <Doctors doctors={doctor}/>
+        </div>
+        <div>
+        <AddPatient patients/>
       </div>
-
-      <PatientList />
+      <PatientList patients={patient}/>
     </div>
   );
 };

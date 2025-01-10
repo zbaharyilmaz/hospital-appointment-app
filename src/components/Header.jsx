@@ -1,18 +1,18 @@
-import React from "react";
 import { RiMentalHealthLine } from "react-icons/ri";
+
 
 const Header = () => {
   return (
-    <div className="container-fluid">
+    <div className=" ad container-fluid ">
       <div>
-      <p className="text-danger fs-3 text-center">
-        Daha iyi hissetme yolculuğunuzda ilk adımınıza özel 500 TL indirim kodu: MEPHAS500
+      <p className=" fs-4 text-center">
+        Daha iyi hissetme yolculuğunuzda ilk adımınıza özel <b>500 TL</b> indirim kodu: <b>MEPHAS500</b>
       </p>
       </div>
       <div>
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
-        <h3><span className="fs-1 ms-3 p-3"><RiMentalHealthLine/></span>MEPHAS PSİKOLOJİ</h3>
+        <h3 style={{fontWeight:"700"}}><span className="fs-1 ms-3 p-3"><RiMentalHealthLine/></span>MEPHAS PSİKOLOJİ</h3>
           <a className="navbar-brand" href="#"></a>
           <form className="d-flex" role="search">
             <input
@@ -35,3 +35,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

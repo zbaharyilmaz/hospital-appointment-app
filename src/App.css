@@ -1,27 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh; /* Sayfanın tamamını kaplamak için yüksekliği %100 yapıyoruz */
+  /* background-position: center; */
+  font-family: "Arsenal", serif !important;
+  font-weight: 700;
+  /* background-color:#D8E0F2; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+    margin-top: 180px !important; /* Navbar'ın yüksekliği kadar boşluk bırakın */
+    background-color: rgb(249, 243, 232) !important;
+}
+.ad{
+  background-color: rgb(177, 232, 199);
+  position: fixed;  /* Sabit pozisyon */
+  top: 0;           /* Sayfanın üst kısmına sabitler */
+  left: 0;          /* Sayfanın sol kısmına sabitler */
+  width: 100%;      /* Navbar'ın tüm genişliği kaplamasını sağlar */
+  z-index: 999;
 }
 .navbar{
-  background-image: linear-gradient(135deg, #c7dbea 0%, #d1e1f9 100%);
+  background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(129, 196, 156) 51.5%, rgba(255,252,247,1) 88.6% );
 }
-h1 {
-  text-align: center;
-  color: #ed5252;
-  font-weight: 900;
-  margin-bottom: 30px;
+
+.ad p{
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-text 20s linear infinite; 
+  font-size: 1 rem; /* Yazı boyutunu ihtiyaca göre ayarlayabilirsiniz */
 }
-body {
-  font-family: "Arsenal", serif;
-  font-weight: 700;
-  background-color: #c7dbea;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+@keyframes scroll-text {
+  0% {
+    transform: translateX(-100%);  /* Başlangıç noktası sağda */
+  }
+  100% {
+    transform: translateX(100%);  /* Son nokta solda */
+  }
 }
-.container {
+/* .container {
   background-image: url("https://wallpapers.com/images/hd/blank-crumpled-paper-ce2xfk1vk85mutcp-ce2xfk1vk85mutcp.webp");
 
   margin: 3rem auto;
@@ -29,33 +51,25 @@ body {
   padding: 2rem;
   border: 2px solid gray;
   border-radius: 5px;
-}
-
-.header {
-  
-  margin: 1rem;
-}
-/* doktor resimleri  */
-.doctorBtn {
-  border: none;
-  cursor: pointer;
- /* outline: none; */
-  padding: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-
-
-/* ilk sayfadaki 4 doktor resmi ve isimlerinin div i*/
+} */
 .dr {
   display: flex;
-  gap: 2rem 1rem;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem 3rem;
 }
+.dr img {
+  cursor: pointer;
+  padding: .2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  object-fit: cover 
+}
+
 /* 2. sayfadaki kayıt oluştur butonu */
 .kayitBtn {
   color: #fff;
- text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -88,11 +102,7 @@ body {
 .falseStyle {
   display: flex;
   justify-content: space-between;
-
-  background-image: url("https://img.freepik.com/free-vector/watercolor-background_220290-15.jpg?w=2000");
-
-  background-size: cover;
-  background-position: center center;
+  background-color:#c7baf8;
   margin: 5px;
   padding: 10px 40px;
   cursor: pointer;
@@ -108,7 +118,7 @@ body {
   display: flex;
   justify-content: space-between;
   border-left: 10px solid #2037b9;
-  background-color: #5dd5f9;
+  background-color: #553DF2;
   padding: 10px 20px;
 }
 
@@ -123,8 +133,8 @@ body {
   
 }
 /* 
-color: #B8C6D9; 
-color: #011526; 
-color: #023859; 
-color: #04668C; 
-color: #BF9278; */
+color: #E7BDF2; 
+color: #DAA0F2; 
+color: #D8E0F2; 
+color: #056CF2; 
+color: #88DFF2; */
