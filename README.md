@@ -1,9 +1,10 @@
 ## Mental Health App 
-A web application designed to help individuals manage their mental health by providing a platform for booking appointments with psychologists. The app allows users to view a list of available doctors, book appointments, and track the status of their appointments. This application offers a user-friendly interface and features essential functionalities aimed at improving access to mental health support.
+
+A web application designed to help individuals manage their mental health by providing a platform for booking appointments with psychologists. The app allows users to view a list of available psychologist, appointments, and track the status of their appointments. This application offers a user-friendly interface and features essential functionalities aimed at improving access to mental health support.
 
 ## Demo
 
-![Project Demo]()
+![Project Demo](./public/mental-health-app.gif)
 
 ## Features
 
@@ -40,8 +41,9 @@ A web application designed to help individuals manage their mental health by pro
  ┗ 📜index.js
 ```
 ### Live Page
+
 Click the link below to view the live version of the app:
-[Live Page]()  
+[Live Page](https://zbaharyilmaz.github.io/mental-health-app/)  
 
 ## Installation Instructions
 
@@ -51,7 +53,7 @@ Clone this repository to your local machine:
 ```
 git clone 
 ```
-Navigate into the project directory:
+Navigate into the project directory: https://github.com/zbaharyilmaz/mental-health-app.git
 
 ```
 cd mental-health-app
