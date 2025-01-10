@@ -1,20 +1,28 @@
 import { FaTimesCircle } from "react-icons/fa";
 
 
-const PatientList = ({patients}) => {
+const PatientList = ({patients, setPatients}) => {
   return (
     <div>
       <div>
         {patients.map((person)=>{
-        const {id, patientName, isDone, myDoctor}= person
+        const {id, patientName,day,isDone, myDoctor}= person
         return(
-            <div className="falseStyle">
+            <div className={isDone===true? "trueStyle":"falseStyle"}
+            onDoubleClick={()=>setPatients(patients.map(()=>id===patients.id))}
+            
+
+            
+            >  
+            {/* isDone? şeklinde de kullanabilirsin. */}
+
           <div key="id">
-            <h2>{patientName} </h2>
-            <h4>{myDoctor} </h4>
-            <h3>{isDone} </h3>
+            <h2><b>Danışan:{patientName}</b></h2>
+            <h4><b>Tarih:</b><i>{day}</i></h4>
+            <h3><b>Psikolog: </b>{myDoctor} </h3>
           </div>
-          <FaTimesCircle/>
+          <FaTimesCircle className="fs-4"
+         onClick={()=>setPatients(patients.filter((b)=>b.id !==id))} />
         </div> 
         )
         })}

@@ -14,12 +14,12 @@ const [patient, setPatient]= useState(appointmentData)
     <div>
         <div>
         <Header/>
-        <Doctors doctors={doctor}/>
+        <Doctors doctors={doctor} setDoctors={setDoctor}/>
         </div>
         <div>
         <AddPatient patients/>
       </div>
-      <PatientList patients={patient}/>
+      <PatientList patients={patient} setPatients={setPatient}/>
     </div>
   );
 };

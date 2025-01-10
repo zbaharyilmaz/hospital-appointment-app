@@ -3,7 +3,7 @@ import { RiMentalHealthLine } from "react-icons/ri";
 
 const Header = () => {
   return (
-    <div className=" ad container-fluid ">
+    <div className="head container-fluid ">
       <div>
       <p className=" fs-4 text-center">
         Daha iyi hissetme yolculuğunuzda ilk adımınıza özel <b>500 TL</b> indirim kodu: <b>MEPHAS500</b>
@@ -12,7 +12,7 @@ const Header = () => {
       <div>
       <nav className="navbar bg-body-tertiary">
         <div className="container-fluid">
-        <h3 style={{fontWeight:"700"}}><span className="fs-1 ms-3 p-3"><RiMentalHealthLine/></span>MEPHAS PSİKOLOJİ</h3>
+        <h3 style={{fontWeight:"700"}}><span className="fs-1 ms-5 p-3"><RiMentalHealthLine/></span>MEPHAS PSİKOLOJİ</h3>
           <a className="navbar-brand" href="#"></a>
           <form className="d-flex" role="search">
             <input

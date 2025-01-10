@@ -13,22 +13,22 @@ body{
   /* background-color:#D8E0F2; */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
-    margin-top: 180px !important; /* Navbar'ın yüksekliği kadar boşluk bırakın */
-    background-color: rgb(249, 243, 232) !important;
+  margin-top: 180px !important; /* Navbar'ın yüksekliği kadar boşluk bırakın */
+  background-color: rgb(249, 243, 232) !important;
 }
-.ad{
+.head{
   background-color: rgb(177, 232, 199);
   position: fixed;  /* Sabit pozisyon */
   top: 0;           /* Sayfanın üst kısmına sabitler */
   left: 0;          /* Sayfanın sol kısmına sabitler */
-  width: 100%;      /* Navbar'ın tüm genişliği kaplamasını sağlar */
+  width: 100%;      
   z-index: 999;
 }
 .navbar{
   background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(129, 196, 156) 51.5%, rgba(255,252,247,1) 88.6% );
 }
 
-.ad p{
+.head p{
   display: inline-block;
   white-space: nowrap;
   animation: scroll-text 20s linear infinite; 
@@ -97,35 +97,35 @@ body{
   border-radius: 5px;
   border: none;
 }
-
-/*! data daki isDone kısmı false iken görünecek stil */
-.falseStyle {
+.falseStyle, .trueStyle {
   display: flex;
   justify-content: space-between;
-  background-color:#c7baf8;
-  margin: 5px;
-  padding: 10px 40px;
+  padding: 5px 10px;
   cursor: pointer;
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 10px;
 }
-.falseStyle h2 {
-  color: green;
+.falseStyle h2, h3,h4 .trueStyle h2, h3, h4{
+  color: rgba(0,56,68,1)
+  /* text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red; */
 }
-.falseStyle h3 {
-  color: #152bbb;
+.falseStyle{
+  background-color: #F4D03F;
+  background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
 }
-/*! data daki isDone kısmı true iken görünecek stil */
-.trueStil {
-  display: flex;
-  justify-content: space-between;
-  border-left: 10px solid #2037b9;
-  background-color: #553DF2;
+
+.trueStyle {
+  border-left: 10px solid rgba(0,56,68,1);
+  background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(129, 196, 156) 51.5%, rgb(248, 238, 221) 88.6% );
   padding: 10px 20px;
 }
 
-.trueStil h3,
-.trueStil h2 {
-  text-decoration: line-through;
-  color: blue;
+.trueStyle h2 {
+  text-decoration:line-through;
+  text-decoration-color: rgba(255,252,247,1);
 }
 .doctorBtn + h4 {
   padding: 10px 20px;
