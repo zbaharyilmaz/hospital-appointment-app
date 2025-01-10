@@ -165,3 +165,87 @@ body {
   text-decoration: line-through;
   text-decoration-color: rgba(255, 252, 247, 1);
 }
+
+@media (max-width: 1200px) {
+  .navbar {
+    font-size: 1rem; /* Büyük ekranlar için uygun font boyutu */
+  }
+  .dr-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 100px; /* Mobil ekranlarda daha küçük boşluk */
+  }
+
+  .head {
+    padding: 10px;
+  }
+
+  .navbar {
+    font-size: 0.9rem;
+  }
+
+  .dr img {
+    width: 100%;
+    height: auto;
+  }
+
+  .registerButton {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .falseStyle,
+  .trueStyle {
+    width: 100%;
+  }
+
+  .form-control {
+    margin: 10px 0;
+  }
+
+  .form-control input {
+    padding: 0.8rem;
+  }
+
+  /* Başlıkları küçült */
+  .fs-2 {
+    font-size: 1.5rem;
+  }
+
+  .fs-4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .dr img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .falseStyle,
+  .trueStyle {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .registerButton {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .navbar {
+    font-size: 0.85rem;
+  }
+
+  .head p {
+    font-size: 0.9rem;
+  }
+}
