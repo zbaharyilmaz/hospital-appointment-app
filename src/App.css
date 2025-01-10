@@ -1,65 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body{
-  height: 100vh; /* Sayfanın tamamını kaplamak için yüksekliği %100 yapıyoruz */
+  height: 100vh;
   /* background-position: center; */
   font-family: "Arsenal", serif !important;
-  font-weight: 700;
   /* background-color:#D8E0F2; */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
-  margin-top: 180px !important; /* Navbar'ın yüksekliği kadar boşluk bırakın */
+  margin-top: 180px !important;
   background-color: rgb(249, 243, 232) !important;
 }
 .head{
   background-color: rgb(177, 232, 199);
-  position: fixed;  /* Sabit pozisyon */
-  top: 0;           /* Sayfanın üst kısmına sabitler */
-  left: 0;          /* Sayfanın sol kısmına sabitler */
+  position: fixed;  
+  top: 0;          
   width: 100%;      
   z-index: 999;
 }
 .navbar{
   background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(129, 196, 156) 51.5%, rgba(255,252,247,1) 88.6% );
 }
-
 .head p{
   display: inline-block;
   white-space: nowrap;
   animation: scroll-text 20s linear infinite; 
-  font-size: 1 rem; /* Yazı boyutunu ihtiyaca göre ayarlayabilirsiniz */
 }
 
 @keyframes scroll-text {
   0% {
-    transform: translateX(-100%);  /* Başlangıç noktası sağda */
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(100%);  /* Son nokta solda */
+    transform: translateX(100%); 
   }
 }
-/* .container {
-  background-image: url("https://wallpapers.com/images/hd/blank-crumpled-paper-ce2xfk1vk85mutcp-ce2xfk1vk85mutcp.webp");
-
-  margin: 3rem auto;
-  max-width: 950px;
-  padding: 2rem;
-  border: 2px solid gray;
-  border-radius: 5px;
-} */
 .dr {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem 3rem;
 }
-
+.dr-container{
+ display: flex;
+ gap: 2rem;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
 .dr img {
   cursor: pointer;
   padding: .2rem;
@@ -80,7 +73,8 @@ body{
 .doctor-img-active {
   background-color: rgb(177, 232, 199); 
   transition: background-color 0.5s ease;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);
+  height: 95%;
 }
 
 .dr img:hover {
@@ -88,48 +82,59 @@ body{
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* 2. sayfadaki kayıt oluştur butonu */
-.kayitBtn {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  background-color: #25ad69;
-  width: 300px;
-  margin: 1rem auto;
-  padding: 1rem;
-  border: 1px solid #6a0707;
-  border-radius: 50px;
-}
-
 .form-control {
   margin: 20px 0;
+  
 }
 
-.form-control label {
-  display: block;
+.form-control label, .form-check label {
+  font-weight: 600;
 }
 
-.form-control input {
+.form-control input,
+.form-check option,
+.form-check select {
   width: 100%;
-  height: 40px;
+  height: 100%;
   padding: 1rem;
-  font-size: 17px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid rgb(177, 232, 199);  /* Border ekleyelim */
+  box-sizing: border-box;  /* Box-sizing'i border-box yapalım */
+}
+
+/* select elemanı için özel stil */
+.form-control select {
+  -webkit-appearance: none; /* Safari için varsayılan stili kaldırır */
+  -moz-appearance: none;    /* Firefox için varsayılan stili kaldırır */
+  appearance: none;         /* Diğer tarayıcılar için varsayılan stili kaldırır */
+  padding-right: 2.5rem;    /* Seçim okunun konumlandırılmasına yardımcı olur */
+}
+.registerButton{
+  width: 200px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 50px;
+}
+.counselors{
+ display: flex;
+ justify-content: center;
 }
 .falseStyle, .trueStyle {
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 5px 5px;
   cursor: pointer;
-  width: 40%;
-  margin-left: 20px;
+  width: 60%;
   margin-top: 10px;
 }
-.falseStyle h2, h3,h4 .trueStyle h2, h3, h4{
-  color: rgba(0,56,68,1)
+.falseStyle h2, 
+.falseStyle h3,
+.falseStyle h4,
+.trueStyle h2, 
+.trueStyle h3, 
+.trueStyle h4{
+  color: rgba(0,56,68,1);
+  font-size: 1.2rem;
   /* text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-color: red; */
@@ -149,14 +154,3 @@ body{
   text-decoration:line-through;
   text-decoration-color: rgba(255,252,247,1);
 }
-.doctorBtn + h4 {
-  padding: 10px 20px;
-/* doctorBtn className li img den sonraki h4 doktor isimleri */
-  
-}
-/* 
-color: #E7BDF2; 
-color: #DAA0F2; 
-color: #D8E0F2; 
-color: #056CF2; 
-color: #88DFF2; */

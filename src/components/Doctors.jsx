@@ -27,7 +27,7 @@ const Doctors = ({ doctors, setDoctors, appointment, setAppointment }) => {
               className={appointment ? "doctor-img-normal" : "doctor-img-active"}
               onClick={() => doctorClick(id)} // Tıklandığında doktoru filtrele ve appointment'ı değiştir
             />
-            <h4>{doctorName}</h4>
+            <h4 className="mt-3">{doctorName}</h4>
           </div>
         );
       })}
