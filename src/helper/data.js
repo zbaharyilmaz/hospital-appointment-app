@@ -1,4 +1,4 @@
-export const appointmentData = [
+export const counseleeData = [
   {
     id: 1,
     patientName: "Engin Serdar",

@@ -1,6 +1,5 @@
 const AddPatient = () => {
 
-   
   return (
     <div>
       <form >

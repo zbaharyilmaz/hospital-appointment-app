@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+
 * {
   padding: 0;
   margin: 0;
@@ -64,6 +65,17 @@ body{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   object-fit: cover 
+}
+/* Normal durumda (appointment: false) */
+.doctor-img-active {
+  background-color: rgba(255,252,247,1); /* Sarı renk */
+  transition: background-color 0.5s ease;
+}
+
+/* Appointment aktif olduğunda (appointment: true) */
+.doctor-img-normal {
+  background-color: rgb(177, 232, 199); /* Koyu mavi-yeşil renk */
+  transition: background-color 0.5s ease;
 }
 
 /* 2. sayfadaki kayıt oluştur butonu */
