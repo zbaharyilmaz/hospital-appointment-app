@@ -47,41 +47,41 @@ export const doctorData = [
   {
     id: 1,
     doctorName: "Prof. Aysa Dizdar",
-    doctorImg: "https://img.freepik.com/free-photo/young-woman-sitting-with-newspaper-couch_23-2148056313.jpg?t=st=1736461133~exp=1736464733~hmac=32266a5d47a01db93425f870dcccb23d05c084506feaf3ff6e724166aa47d139&w=740",
+    doctorImg: "https://img.freepik.com/free-photo/front-view-woman-sitting-couch_23-2149927565.jpg?t=st=1736537636~exp=1736541236~hmac=24f22c8399bdf393131b1e5eef2e89e30f15a56134cd3f8bed2306a030119ceb&w=1380",
   },
   {
     id: 2,
     doctorName: "Psk. Alina Berrin Akın",
-    doctorImg: "https://img.freepik.com/free-photo/serious-blonde-businesswoman_23-2147626443.jpg?t=st=1736459584~exp=1736463184~hmac=26e350264dc755b308b590468e3c1ceff1ca8950f874f9007d5e85a9bffa2cc5&w=1380",
+    doctorImg: "https://img.freepik.com/free-photo/mid-shot-woman-therapist-with-clipboard_23-2148759113.jpg?t=st=1736538004~exp=1736541604~hmac=0f54a85eaa2df89874b5b92ed8f99fd0d098aa8b0231c8d021d2883f1e557864&w=900",
   },
   {
     id: 3,
     doctorName: "Psk. Sena Adil",
     doctorImg:
-       "https://img.freepik.com/free-photo/front-view-woman-working-from-home_23-2148482621.jpg?t=st=1736461098~exp=1736464698~hmac=8034a7d861f1e9beca5c942500d5ab5b0e5bcf42f1259e5445d540a45e761d34&w=740",
+       "https://img.freepik.com/free-photo/front-view-woman-working-from-home_23-2148482621.jpg?t=st=1736538046~exp=1736541646~hmac=65b40b785585ff199461b871b9fb38b0fce7a3568d8da2118d12ad18f910107c&w=740",
   },
   {
     id: 4,
     doctorName: "Psk. Neva Yılmaz",
     doctorImg:
-      "https://img.freepik.com/free-photo/beautiful-woman-reading-book_23-2148597038.jpg?t=st=1736459667~exp=1736463267~hmac=c360d9052f90c58efccfaf47e3eae67b549995a44019dd386fac13ac190fa8e8&w=740",
+      "https://img.freepik.com/free-photo/medium-shot-woman-holding-book_23-2148882744.jpg?t=st=1736538532~exp=1736542132~hmac=f7b8e94c90f7b8ab2bd7da70b600c062ee40db99f1241dcb471530ef5deff282&w=900",
   },
   {
     id: 5,
     doctorName: "Asst. Prof. Emir Akın",
     doctorImg:
-      "https://img.freepik.com/free-photo/portrait-businessman-conference-room-thinking-about-future_482257-25788.jpg?t=st=1736461022~exp=1736464622~hmac=ea24997075ea72779f167f3a507d4d9621890d91f1940130bfcaf5068dfdfd0a&w=1380",
+      "https://img.freepik.com/free-photo/bearded-grey-haired-elderly-man-dressed-formal-suit_273609-6125.jpg?t=st=1736538753~exp=1736542353~hmac=ac2b8d603765303e9ca1a80d51804a8aa292d90ae87794f9a3d6310ddb1a1aaf&w=1380",
   },
   {
     id: 6,
     doctorName: "Psk. Müge Sezen",
-    doctorImg:  "https://img.freepik.com/free-photo/pretty-girl-with-nice-smile_23-2147611501.jpg?t=st=1736459633~exp=1736463233~hmac=2f50a5e8456cb906b5707efc8993bdf3efeb96441931c19923680984b60d285f&w=740",
+    doctorImg:  "https://img.freepik.com/free-photo/close-up-smiley-woman-therapy_23-2148913040.jpg?t=st=1736538375~exp=1736541975~hmac=d5ef327699632ec2f22803578faf88cefdf872e51b212553ed3411cbbb77bd4a&w=1380",
   },
   {
     id: 7,
     doctorName: "Psk. Ayhan Kemer",
     doctorImg:
-      "https://img.freepik.com/free-photo/male-model-white-toned-casual-outfits_144627-31293.jpg?t=st=1736460984~exp=1736464584~hmac=1d57f225219d25cb8591d204058a35816d5a6de6be5d538c81d9b394d892058d&w=740",
+      "https://img.freepik.com/free-photo/pov-businessman-attending-videocall-meeting-office-using-online-videoconference-talk-consultant-about-financial-strategy-company-employee-chatting-remote-teleconference-close-up_482257-40929.jpg?t=st=1736538694~exp=1736542294~hmac=d290149b527e337b1bb2dfc1bb8dbe1632ac8dc46f84ec4feae06b97483c01c6&w=1800",
   },
 
 ];

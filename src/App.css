@@ -16,7 +16,7 @@ body {
   background-color: rgb(249, 243, 232) !important;
 }
 .head {
-  background-color: rgb(177, 232, 199);
+  background-color: rgb(142, 218, 172);
   position: fixed;
   top: 0;
   width: 100%;
@@ -26,7 +26,7 @@ body {
   background-image: radial-gradient(
     circle 1292px at -13.6% 51.7%,
     rgba(0, 56, 68, 1) 0%,
-    rgb(129, 196, 156) 51.5%,
+    rgb(83, 156, 112) 60.5%,
     rgba(255, 252, 247, 1) 88.6%
   );
 }

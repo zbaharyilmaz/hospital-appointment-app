@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <div className="head container-fluid ">
       <div>
-        <p className=" fs-4 text-center">
+        <p className=" fs-5 mt-1 text-center">
           Daha iyi hissetme yolculuğunuzda ilk adımınıza özel <b>500 TL</b>{" "}
-          indirim kodu: <b>MEBHAS500</b>
+          indirim kodu: <b>MEPHAS500</b>
         </p>
       </div>
       <div>
@@ -16,7 +16,7 @@ const Header = () => {
               <span className="fs-1 ms-5 p-3">
                 <RiMentalHealthLine />
               </span>
-              MEBHAS PSİKOLOJİ
+              MEPHAS PSİKOLOJİ
             </h3>
             <form className="d-flex" role="search">
               <input
