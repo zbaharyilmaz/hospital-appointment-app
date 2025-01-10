@@ -7,12 +7,14 @@ const Doctors = ({ doctors, setDoctors, appointment, setAppointment }) => {
     // Burada doktorları filtreliyoruz (doktorun id'si ile)
     setDoctors(doctors.filter((d) => d.id === id));
 
+    // setAppointment((prevState) => !prevState);
     // appointment durumunu true yapıyoruz
     setAppointment(false);  // Randevu aktif oldu, renk kırmızı olacak
   };
 
   return (
     <div className="dr">
+      {/*className={appointment ? "dr" : "dr-row"}  */}
       {doctors.map((doc) => {
         const { id, doctorImg, doctorName } = doc;
         return (
@@ -22,7 +24,7 @@ const Doctors = ({ doctors, setDoctors, appointment, setAppointment }) => {
               width="300px"
               height="300px"
               alt="doctor"
-              className={appointment ? "doctor-img-active" : "doctor-img-normal"}
+              className={appointment ? "doctor-img-normal" : "doctor-img-active"}
               onClick={() => doctorClick(id)} // Tıklandığında doktoru filtrele ve appointment'ı değiştir
             />
             <h4>{doctorName}</h4>

@@ -18,7 +18,7 @@ const [appointment, setAppointment] = useState(true)   //!true verdik.
         <Doctors doctors={doctor} setDoctors={setDoctor} appointment={appointment} setAppointment={setAppointment} />
         </div>
         <div>
-        <AddPatient patients/>
+        {!appointment && <AddPatient patients={patient} setPatients={setPatient} />}
       </div>
       <PatientList patients={patient} setPatients={setPatient} appointment={appointment} setAppointment={setAppointment}/>
     </div>

@@ -59,23 +59,33 @@ body{
   flex-wrap: wrap;
   gap: 2rem 3rem;
 }
+
 .dr img {
   cursor: pointer;
   padding: .2rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  object-fit: cover 
+  object-fit: cover;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  filter: opacity(0.9); 
+  transition: filter 0.3s ease, box-shadow 0.3s ease; 
 }
-/* Normal durumda (appointment: false) */
-.doctor-img-active {
-  background-color: rgba(255,252,247,1); /* Sarı renk */
+
+/* (appointment: false) */
+.doctor-img-normal {
+  background-color: rgba(255, 252, 247, 1); 
   transition: background-color 0.5s ease;
 }
 
-/* Appointment aktif olduğunda (appointment: true) */
-.doctor-img-normal {
-  background-color: rgb(177, 232, 199); /* Koyu mavi-yeşil renk */
+/*(appointment: true) */
+.doctor-img-active {
+  background-color: rgb(177, 232, 199); 
   transition: background-color 0.5s ease;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4); 
+}
+
+.dr img:hover {
+  filter: opacity(1); 
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* 2. sayfadaki kayıt oluştur butonu */

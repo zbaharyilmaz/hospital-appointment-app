@@ -1,4 +1,4 @@
-const AddPatient = () => {
+const AddPatient = ({patients, setPatients}) => {
 
   return (
     <div>
