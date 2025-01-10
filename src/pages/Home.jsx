@@ -22,13 +22,16 @@ const Home = () => {
             setDoctors={setDoctor}
             appointment={appointment}
             setAppointment={setAppointment}
+            patients={patient}
+            setPatients={setPatient}
           />
         </div>
-        <div >
+        <div>
           {!appointment && (
             <AddPatient
               patients={patient}
               setPatients={setPatient}
+              doctors={doctor}
             />
           )}
         </div>

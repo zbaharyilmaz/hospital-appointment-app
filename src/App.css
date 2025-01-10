@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   height: 100vh;
   /* background-position: center; */
   font-family: "Arsenal", serif !important;
@@ -15,20 +15,25 @@ body{
   margin-top: 180px !important;
   background-color: rgb(249, 243, 232) !important;
 }
-.head{
+.head {
   background-color: rgb(177, 232, 199);
-  position: fixed;  
-  top: 0;          
-  width: 100%;      
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 999;
 }
-.navbar{
-  background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(129, 196, 156) 51.5%, rgba(255,252,247,1) 88.6% );
+.navbar {
+  background-image: radial-gradient(
+    circle 1292px at -13.6% 51.7%,
+    rgba(0, 56, 68, 1) 0%,
+    rgb(129, 196, 156) 51.5%,
+    rgba(255, 252, 247, 1) 88.6%
+  );
 }
-.head p{
+.head p {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-text 20s linear infinite; 
+  animation: scroll-text 20s linear infinite;
 }
 
 @keyframes scroll-text {
@@ -36,7 +41,7 @@ body{
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
 }
 .dr {
@@ -45,49 +50,49 @@ body{
   flex-wrap: wrap;
   gap: 2rem 3rem;
 }
-.dr-container{
- display: flex;
- gap: 2rem;
- text-align: center;
- justify-content: center;
- align-items: center;
- flex-wrap: wrap;
+.dr-container {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .dr img {
   cursor: pointer;
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 5px;
   object-fit: cover;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
-  filter: opacity(0.9); 
-  transition: filter 0.3s ease, box-shadow 0.3s ease; 
+  filter: opacity(0.9);
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* (appointment: false) */
 .doctor-img-normal {
-  background-color: rgba(255, 252, 247, 1); 
+  background-color: rgba(255, 252, 247, 1);
   transition: background-color 0.5s ease;
 }
 
 /*(appointment: true) */
 .doctor-img-active {
-  background-color: rgb(177, 232, 199); 
+  background-color: rgb(177, 232, 199);
   transition: background-color 0.5s ease;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);
   height: 95%;
 }
 
 .dr img:hover {
-  filter: opacity(1); 
+  filter: opacity(1);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
 .form-control {
   margin: 20px 0;
-  
 }
 
-.form-control label, .form-check label {
+.form-control label,
+.form-check label {
   font-weight: 600;
 }
 
@@ -98,28 +103,29 @@ body{
   height: 100%;
   padding: 1rem;
   border-radius: 5px;
-  border: 1px solid rgb(177, 232, 199);  /* Border ekleyelim */
-  box-sizing: border-box;  /* Box-sizing'i border-box yapalım */
+  border: 1px solid rgb(177, 232, 199); /* Border ekleyelim */
+  box-sizing: border-box; /* Box-sizing'i border-box yapalım */
 }
 
 /* select elemanı için özel stil */
 .form-control select {
   -webkit-appearance: none; /* Safari için varsayılan stili kaldırır */
-  -moz-appearance: none;    /* Firefox için varsayılan stili kaldırır */
-  appearance: none;         /* Diğer tarayıcılar için varsayılan stili kaldırır */
-  padding-right: 2.5rem;    /* Seçim okunun konumlandırılmasına yardımcı olur */
+  -moz-appearance: none; /* Firefox için varsayılan stili kaldırır */
+  appearance: none; /* Diğer tarayıcılar için varsayılan stili kaldırır */
+  padding-right: 2.5rem; /* Seçim okunun konumlandırılmasına yardımcı olur */
 }
-.registerButton{
+.registerButton {
   width: 200px;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 50px;
 }
-.counselors{
- display: flex;
- justify-content: center;
+.counselors {
+  display: flex;
+  justify-content: center;
 }
-.falseStyle, .trueStyle {
+.falseStyle,
+.trueStyle {
   display: flex;
   justify-content: space-between;
   padding: 5px 5px;
@@ -127,30 +133,35 @@ body{
   width: 60%;
   margin-top: 10px;
 }
-.falseStyle h2, 
+.falseStyle h2,
 .falseStyle h3,
 .falseStyle h4,
-.trueStyle h2, 
-.trueStyle h3, 
-.trueStyle h4{
-  color: rgba(0,56,68,1);
+.trueStyle h2,
+.trueStyle h3,
+.trueStyle h4 {
+  color: rgba(0, 56, 68, 1);
   font-size: 1.2rem;
   /* text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-color: red; */
 }
-.falseStyle{
-  background-color: #F4D03F;
-  background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+.falseStyle {
+  background-color: #f4d03f;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
 }
 
 .trueStyle {
-  border-left: 10px solid rgba(0,56,68,1);
-  background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgb(129, 196, 156) 51.5%, rgb(248, 238, 221) 88.6% );
+  border-left: 10px solid rgba(0, 56, 68, 1);
+  background-image: radial-gradient(
+    circle 1292px at -13.6% 51.7%,
+    rgba(0, 56, 68, 1) 0%,
+    rgb(129, 196, 156) 51.5%,
+    rgb(248, 238, 221) 88.6%
+  );
   padding: 10px 20px;
 }
 
 .trueStyle h2 {
-  text-decoration:line-through;
-  text-decoration-color: rgba(255,252,247,1);
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 252, 247, 1);
 }

@@ -1,15 +1,29 @@
 import React, { useState } from "react";
 
-const Doctors = ({ doctors, setDoctors, appointment, setAppointment }) => {
-
+const Doctors = ({
+  doctors,
+  setDoctors,
+  appointment,
+  patients,
+  setPatients,
+  setAppointment,
+}) => {
   // Doktora tıklanması durumunda yapılacak işlem
   const doctorClick = (id) => {
-    // Burada doktorları filtreliyoruz (doktorun id'si ile)
-    setDoctors(doctors.filter((d) => d.id === id));
+    // Burada doktoru buluyoruz (doktorun id'si ile)
+    const selectedDoctor = doctors.find((d) => d.id === id);
 
-    // setAppointment((prevState) => !prevState);
-    // appointment durumunu true yapıyoruz
-    setAppointment(false);  // Randevu aktif oldu, renk kırmızı olacak
+    // Doktoru filtreliyoruz
+    setDoctors([selectedDoctor]);
+
+    // appointment durumunu false yapıyoruz
+    setAppointment(false);
+
+    // Seçilen doktora bağlı olarak hastaları filtreliyoruz
+    // sadece tıklanan doktora ait hastaları filtreliyoruz
+    setPatients(
+      patients.filter((a) => a.myDoctor === selectedDoctor.doctorName)
+    );
   };
 
   return (
@@ -19,12 +33,14 @@ const Doctors = ({ doctors, setDoctors, appointment, setAppointment }) => {
         const { id, doctorImg, doctorName } = doc;
         return (
           <div key={id}>
-            <img 
+            <img
               src={doctorImg}
               width="300px"
               height="300px"
               alt="doctor"
-              className={appointment ? "doctor-img-normal" : "doctor-img-active"}
+              className={
+                appointment ? "doctor-img-normal" : "doctor-img-active"
+              }
               onClick={() => doctorClick(id)} // Tıklandığında doktoru filtrele ve appointment'ı değiştir
             />
             <h4 className="mt-3">{doctorName}</h4>
