@@ -16,7 +16,7 @@ A web application designed to help individuals manage their mental health by pro
 ## Technologies Used
 
 - **React.js:** Front-end JavaScript library used for building the user interface and managing state.
-- **React Hooks (useState, useEffect):** Used for managing state and side effects in the application.
+- **React Hooks:** Used for managing state and side effects in the application.
 - **React Icons:** Used to display various icons like the close button (FaTimesCircle).
 - **UUID:** A package used for generating unique identifiers for each appointment.
 - **CSS:** Used for styling the application, making it visually appealing and easy to use. Custom CSS was implemented for responsive layouts, form designs, and transitions.
@@ -51,9 +51,9 @@ To get started with the Mental Health App project, follow these steps:
 
 Clone this repository to your local machine:
 ```
-git clone 
+git clone https://github.com/zbaharyilmaz/mental-health-app.git
 ```
-Navigate into the project directory: https://github.com/zbaharyilmaz/mental-health-app.git
+Navigate into the project directory:
 
 ```
 cd mental-health-app
